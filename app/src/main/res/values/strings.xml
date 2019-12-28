@@ -1,4 +1,3 @@
 <resources>
-    <string name="app_name">IFST</string>
-    <string name="title_activity_splash_screen">splashScreen</string>
+    <string name="app_name">Conference</string>
 </resources>
