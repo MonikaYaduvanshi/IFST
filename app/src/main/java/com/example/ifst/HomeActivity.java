@@ -16,12 +16,20 @@ public class HomeActivity extends AppCompatActivity {
 
         RelativeLayout relativeLayout5 = findViewById(R.id.cardRelative5);
         RelativeLayout relativeLayout1 = findViewById(R.id.cardRelative1);
+        RelativeLayout relativeLayout4 = findViewById(R.id.cardRelative4);
 
         relativeLayout1.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this, Collaborators.class));
+            }
+        });
+        relativeLayout4.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, Organizers.class));
             }
         });
 
@@ -31,9 +39,5 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this, SpeakersList.class));
             }
         });
-
-
-
-
     }
 }
