@@ -12,7 +12,6 @@
         android:src="@drawable/jcbust"
         android:id="@+id/ymca"
         >
-
     </androidx.appcompat.widget.AppCompatImageView>
     <TextView
         android:layout_width="match_parent"
@@ -25,8 +24,6 @@
         android:layout_below="@id/ymca"
         android:textColor="@color/colorPrimaryDark"
         android:text="@string/ymca_details"
-
         >
-
     </TextView>
 </RelativeLayout>
