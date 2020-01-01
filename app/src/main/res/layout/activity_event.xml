@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp"
+        android:id="@+id/xyz"
+        android:background="@color/yellow"
+        android:layout_marginBottom="10dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Events"
+        android:layout_centerInParent="true"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layoutButton"
+        android:layout_centerHorizontal="true">
+ <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="7 jan"
+     android:id="@+id/btn1"
+     android:layout_marginRight="20dp"
+     android:layout_marginStart="60dp"
+
+     android:background="@color/colorAccent"
+     android:padding="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8 jan"
+        android:id="@+id/btn2"
+        android:layout_marginStart="60dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"/>
+    </LinearLayout>
+<androidx.viewpager.widget.ViewPager
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/eventViewpager"/>
+</LinearLayout>
