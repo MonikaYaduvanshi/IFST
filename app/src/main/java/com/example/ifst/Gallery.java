@@ -43,7 +43,7 @@ public class Gallery extends AppCompatActivity {
                 //Toast.makeText(Gallery.this,"Loaded",Toast.LENGTH_SHORT).show();
                 for(DataSnapshot postSnapshot : dataSnapshot.getChildren())
                 {
-                    //Upload upload = postSnapshot.getValue(Upload.class);
+                   // Upload upload = postSnapshot.getValue(Upload.class);
                     Upload upload=new Upload();
                     upload.setUrl(postSnapshot.getValue().toString());
                     uploads.add(upload);
