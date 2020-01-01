@@ -35,7 +35,7 @@ public class Gallery extends AppCompatActivity {
         progressBar =findViewById(R.id.progress_circular);
         uploads=new ArrayList<Upload>();
 
-        databaseReference = FirebaseDatabase.getInstance().getReference();
+        databaseReference = FirebaseDatabase.getInstance().getReference("Images");
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
