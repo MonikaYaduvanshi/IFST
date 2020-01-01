@@ -40,7 +40,7 @@ public class Gallery extends AppCompatActivity {
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Toast.makeText(Gallery.this,"retruevung",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Gallery.this,"Loaded",Toast.LENGTH_SHORT).show();
                 for(DataSnapshot postSnapshot : dataSnapshot.getChildren())
                 {
                     //Upload upload = postSnapshot.getValue(Upload.class);
