@@ -1,6 +1,7 @@
 package com.example.ifst;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,9 +15,11 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+
         RelativeLayout relativeLayout5 = findViewById(R.id.cardRelative5);
         RelativeLayout relativeLayout1 = findViewById(R.id.cardRelative1);
         RelativeLayout relativeLayout4 = findViewById(R.id.cardRelative4);
+        RelativeLayout relativeLayoutEvent= findViewById(R.id.eventcard);
         RelativeLayout relativeLayoutGallery = findViewById(R.id.relativeViewGallery);
         relativeLayout1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,5 +48,14 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this,Gallery.class));
             }
         });
+        relativeLayoutEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this,Event.class));
+            }
+        });
+
+
+
     }
 }
