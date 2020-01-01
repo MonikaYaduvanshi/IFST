@@ -17,7 +17,7 @@ public class HomeActivity extends AppCompatActivity {
         RelativeLayout relativeLayout5 = findViewById(R.id.cardRelative5);
         RelativeLayout relativeLayout1 = findViewById(R.id.cardRelative1);
         RelativeLayout relativeLayout4 = findViewById(R.id.cardRelative4);
-
+        RelativeLayout relativeLayoutGallery = findViewById(R.id.relativeViewGallery);
         relativeLayout1.setOnClickListener(new View.OnClickListener() {
             @Override
 
@@ -37,6 +37,12 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this, SpeakersList.class));
+            }
+        });
+        relativeLayoutGallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this,Gallery.class));
             }
         });
     }
