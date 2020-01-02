@@ -34,17 +34,19 @@ public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.Even
     @Override
     public void onBindViewHolder(@NonNull EventListAdapter.EventViewHolder holder, int position) {
           EventLists currentItem= mEventLists.get(position);
-        //  String session= currentIten.getSession();
-       //   String venue= currentIten.getVenue();
-        //  String time= currentIten.getTime();
-
+          String session= currentItem.getSession();
+          String venue= currentItem.getVenue();
+          String time= currentItem.getTime();
+          holder.session.setText(session);
+          holder.time.setText(time);
+          holder.venue.setText(venue);
 
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mEventLists.size();
     }
 
     public class EventViewHolder extends RecyclerView.ViewHolder {

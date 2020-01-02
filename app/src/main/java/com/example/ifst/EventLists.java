@@ -5,6 +5,9 @@ public class EventLists {
     private String venue;
     private String time;
 
+    public EventLists() {
+        //default needed
+    }
     public EventLists(String session, String venue, String time) {
         this.session = session;
         this.venue = venue;
