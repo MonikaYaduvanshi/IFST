@@ -19,8 +19,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Events"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_centerInParent="true"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold">
 
     </TextView>
@@ -30,7 +31,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:id="@+id/layoutButton"
-        android:layout_centerHorizontal="true"
+
         android:layout_margin="10dp"
         >
  <Button
@@ -49,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="70dp"
             android:layout_marginEnd="40dp"
-            android:background="@drawable/roundbutton"
+            android:background="@drawable/buttoncolor"
             android:text="8 jan" />
     </LinearLayout>
 <androidx.viewpager.widget.ViewPager

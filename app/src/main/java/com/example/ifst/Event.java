@@ -19,6 +19,15 @@ public class Event extends AppCompatActivity {
 
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+            int x= viewPager.getCurrentItem();
+            if(x==0){
+                day1.setBackground(getDrawable(R.drawable.roundbutton));
+                day2.setBackground(getDrawable(R.drawable.buttoncolor));
+            }
+            else{
+                day1.setBackground(getDrawable(R.drawable.buttoncolor));
+                day2.setBackground(getDrawable(R.drawable.roundbutton));
+            }
 
         }
 
@@ -38,6 +47,7 @@ public class Event extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event);
         viewPager= findViewById(R.id.eventViewpager);
+        viewPager.addOnPageChangeListener(onPageChangeListener);
         DayAdapter adapter= new DayAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
         day1= findViewById(R.id.btn1);
