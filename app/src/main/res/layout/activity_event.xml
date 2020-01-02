@@ -30,25 +30,25 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:id="@+id/layoutButton"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        >
  <Button
-     android:layout_width="wrap_content"
+     android:layout_width="100dp"
      android:layout_height="wrap_content"
      android:text="7 jan"
      android:id="@+id/btn1"
      android:layout_marginRight="20dp"
-     android:layout_marginStart="60dp"
-
-     android:background="@color/colorAccent"
+     android:layout_marginStart="50dp"
+     android:background="@drawable/roundbutton"
      android:padding="10dp"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="8 jan"
         android:id="@+id/btn2"
-        android:layout_marginStart="60dp"
-        android:background="@color/colorAccent"
-        android:padding="10dp"/>
+        android:layout_marginStart="100dp"
+        android:background="@drawable/roundbutton" />
     </LinearLayout>
 <androidx.viewpager.widget.ViewPager
     android:layout_width="wrap_content"
