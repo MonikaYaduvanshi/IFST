@@ -38,17 +38,19 @@
      android:layout_height="wrap_content"
      android:text="7 jan"
      android:id="@+id/btn1"
-     android:layout_marginRight="20dp"
+     android:layout_marginRight="0dp"
      android:layout_marginStart="50dp"
      android:background="@drawable/roundbutton"
      android:padding="10dp"/>
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="8 jan"
-        android:id="@+id/btn2"
-        android:layout_marginStart="100dp"
-        android:background="@drawable/roundbutton" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/roundbutton"
+            android:text="8 jan" />
     </LinearLayout>
 <androidx.viewpager.widget.ViewPager
     android:layout_width="wrap_content"

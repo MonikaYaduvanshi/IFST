@@ -37,9 +37,9 @@ public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.Even
           String session= currentItem.getSession();
           String venue= currentItem.getVenue();
           String time= currentItem.getTime();
-          holder.session.setText(session);
-          holder.time.setText(time);
-          holder.venue.setText(venue);
+          holder.session.setText("Session: "+session);
+          holder.time.setText("Time: "+time);
+          holder.venue.setText("Venue: "+venue);
 
 
     }
