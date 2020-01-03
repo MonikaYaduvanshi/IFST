@@ -39,7 +39,6 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ImageVie
                 .centerCrop()
                 .into(imageViewHolder.album);
     }
-
     @Override
     public int getItemCount() {
         return mUploads.size();
