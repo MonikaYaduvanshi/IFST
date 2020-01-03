@@ -38,6 +38,7 @@ private EventListAdapter eventListAdapter;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
         View root=  inflater.inflate(R.layout.fragment_day1, container, false);
         recyclerView= root.findViewById(R.id.day1recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
