@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.ifst">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -10,15 +11,17 @@
         android:label="ISFT2020"
         android:roundIcon="@drawable/isft"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Event"></activity>
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".schedule"></activity>
+        <activity android:name=".Event" />
         <activity android:name=".Gallery" />
         <activity android:name=".Organizers" />
         <activity android:name=".Collaborators" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".splashScreen">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
