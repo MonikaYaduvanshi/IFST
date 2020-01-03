@@ -34,7 +34,7 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ImageVie
         Upload currentUpload = mUploads.get(i);
         Picasso.with(mcontext)
                 .load(currentUpload.getUrl())
-                .placeholder(R.drawable.buffer)
+                .placeholder(R.drawable.bu)
                 .fit()
                 .centerCrop()
                 .into(imageViewHolder.album);
