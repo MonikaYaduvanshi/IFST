@@ -11,15 +11,14 @@
         android:roundIcon="@drawable/isft"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HelpDesk"></activity>
-        <activity android:name=".Event" />
+        <activity android:name=".Event"></activity>
         <activity android:name=".Gallery" />
         <activity android:name=".Organizers" />
         <activity android:name=".Collaborators" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".splashScreen">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.VIEW"/>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />

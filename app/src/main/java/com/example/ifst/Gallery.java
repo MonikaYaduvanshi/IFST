@@ -6,10 +6,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -37,10 +39,18 @@ public class Gallery extends AppCompatActivity {
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Images");
 
+//        databaseReference.orderByValue().limitToLast(4).addChildEventListener(new ChildEventListener() {
+//            @Override
+//            public void onChildAdded(@NonNull DataSnapshot snapshot, String previousChild) {
+//                Log.d(TAG, "The " + snapshot.getKey() + " dinosaur's score is " + snapshot.getValue());
+//            }
+        Toast.makeText(this, "To view Gallery Please Connect to Internet", Toast.LENGTH_SHORT).show();
+
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 //Toast.makeText(Gallery.this,"Loaded",Toast.LENGTH_SHORT).show();
+
                 for(DataSnapshot postSnapshot : dataSnapshot.getChildren())
                 {
                    // Upload upload = postSnapshot.getValue(Upload.class);

@@ -31,14 +31,11 @@ public class day2 extends Fragment {
         // Required empty public constructor
     }
 
-
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
         View root=  inflater.inflate(R.layout.fragment_day2, container, false);
         recyclerView= root.findViewById(R.id.day2);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL,false));
