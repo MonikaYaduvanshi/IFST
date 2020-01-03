@@ -43,7 +43,6 @@ private EventListAdapter eventListAdapter;
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         mEventLists=new ArrayList<EventLists>();
         databaseReference = FirebaseDatabase.getInstance().getReference("Day1");
-
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
