@@ -21,6 +21,8 @@ public class HomeActivity extends AppCompatActivity {
         RelativeLayout relativeLayout4 = findViewById(R.id.cardRelative4);
         RelativeLayout relativeLayoutEvent= findViewById(R.id.eventcard);
         RelativeLayout relativeLayoutGallery = findViewById(R.id.relativeViewGallery);
+        RelativeLayout relativeLayoutHelpDesk = findViewById(R.id.cardRelative6);
+
         relativeLayout1.setOnClickListener(new View.OnClickListener() {
             @Override
 
@@ -55,6 +57,13 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+
+        relativeLayoutHelpDesk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,HelpDesk.class));
+            }
+        });
 
 
     }
