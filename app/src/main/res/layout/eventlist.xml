@@ -31,12 +31,21 @@
                  android:id="@+id/session"
                  android:textColor="@color/colorPrimaryDark"
                  android:textSize="17sp"
+                 android:textStyle="bold"
                  />
              <TextView
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
                  android:text="Coordinator :"
                  android:id="@+id/sessionCoodinators"
+                 android:textColor="@color/colorPrimaryDark"
+                 android:textSize="15sp"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Coordinator :"
+                 android:id="@+id/sessionCoodinators2"
                  android:textColor="@color/colorPrimaryDark"
                  android:textSize="15sp"
                  />
@@ -48,6 +57,7 @@
                  android:id="@+id/venue"
                  android:textColor="@color/colorPrimaryDark"
                  android:textSize="15sp"
+                 android:textStyle="bold"
                 />
 
 

@@ -12,14 +12,14 @@
         android:orientation="horizontal"
         android:layout_height="60dp"
         android:id="@+id/xyz"
-        android:background="@color/yellow"
+        android:background="@color/bluetheme"
         android:layout_marginBottom="10dp"
         >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Events"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/white"
         android:layout_centerInParent="true"
         android:textSize="30sp"
         android:textStyle="bold">
